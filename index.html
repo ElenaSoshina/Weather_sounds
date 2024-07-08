@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Sounds</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Weather sounds</h1>
+	<div class='controls'>
+		<div class='button-container'>
+			<div class='card sun-card'>
+				<button id='sunButton'>
+					<img src='assets/icons/sun.svg' alt='sun'>
+				</button>
+			</div>
+			
+			<div class='card rain-card'>
+				<button id='rainButton'>
+					<img src='assets/icons/cloud-rain.svg' alt='rain'>
+				</button>
+			</div>
+			
+			<div class='card snow-card'>
+				<button id='snowButton'>
+					<img src='assets/icons/cloud-snow.svg' alt='snow'>
+				</button>
+			</div>
+		</div>
+		
+		<div class="slider-container">
+      <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+    </div>
+	</div>
+<script src='dist/bundle.js'></script>
+</body>
+</html>
